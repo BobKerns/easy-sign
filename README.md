@@ -1,32 +1,26 @@
-# Project Template npm-typescript-rollup-template
+# Project Easy-Sign
 
-This lays out a common project structure, and is hello-world buildable out of the box.
-It focuses on providing an easy-to-understand starting point for integrating
-with typescript and the [rollup](https://www.rollupjs.org) packager.
-
-Rather than trying to set up to handle every possible variation, the intent of this
-template is to be opinionated about how a project should be organized—and then do that well.
-
-I think the narrow focus serves the user better. Even if you chose a different path,
-it makes it easier to understand and to know how you wish to deviate.
+This provides an easy-to-use and secure interface to create and use digital signatures within an
+application.
 
 # Features
-* Simple starting point.
-* Full typescript integration
-  * Generated Javascript files and source are placed in lib/ for easy cleanup and less clutter.
-  * Javascript configuration files redirect to typescript ones in [./config](config/README.md) .
-  * Typescript build tools are fully supported in-project.
-* Great experience out-of-the-box.
-  * Extensive descriptions of project structure
-  * Descriptions of plugins and options.
-  * A buildable, testable environment out-of-the-box
-  * Clear path to adding additional features
-* Updates and optional features can be flexibliy merged in via git merges.
-  * Regular update scripts break when you make customizations.
-  * Git merges, at worst, give merge conflicts.
-  * Merge conflicts lay out what change was being attempted and why there was a conflict.
-  * Because you have the context for why your change conflicts, it's easier to resolve.
-  * The usual fallback for script-based template configuration is to manually figure out and make the changes.
+This solves a simpler problem than the bare crypto APIs, which have to concern themselves with
+a host of options to interoperate with a wide range of algorithms and data formats. (And it
+offers only a small subset of all the options out there).
+
+The focus is on an API that is easy to use in a cryptographically-sound way.
+* Ease of use
+  * Task-oriented API
+  * Limited configuration choices. It is pre-configured to use the appropriate modern algorithms
+    at a strength suitable for most cases.
+  * Eliminating the requirement for interoperability means you can focus on your application's
+    needs, without worrying about what attribute the JWS and JWT standards might specify for
+    your need.
+  * Supports the large majority of Javascript objects.
+  * Supports circular datastructures.
+* Follows security best practices out-of-the-box
+  * Proper use of salt and iv handled automatically.
+  * Keystores are encrypted under a password and PEM-formatted
 
 # Content
 
@@ -90,5 +84,5 @@ This hierarchy contains the project's source code and related tests.
 * .npmignore — hides build infrastructure, sources, etc. from the final npm package.
 * travis.yml -- configuration for building automatically on [Travis](https://travis-ci.com/)
 * rollup.config.js -- redirects to [/config/rollup.config.ts](/config/rollup.config.ts)
-* 
+*
 
