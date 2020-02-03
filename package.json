@@ -39,8 +39,7 @@
     "url": "https://github.com/BobKerns/npm-typescript-rollup-template/issues"
   },
   "homepage": "https://github.com/BobKerns/npm-typescript-rollup-template#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.9.1",
     "@types/ramda": "^0.26.40",
