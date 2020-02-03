@@ -9,7 +9,7 @@ os:
 # Build with both the latest Node version. (Uncomment lts/* to also build on the latest LTS)
 node_js:
   - node
-# - lts/*
+  - lts/*
 # Cache the modules we build against.
 cache: npm
 # Build by running the tests (this is the Travis default)
