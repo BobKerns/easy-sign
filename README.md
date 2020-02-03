@@ -43,6 +43,16 @@ You should edit package.json, with special attention to these fields:
 * `bugs.url:`
 * `homepage:`
 
+## Continuous Integration Integration
+Three free Continuous Integration workflows are configured out of the box.  Remove any you
+you do not need, or disable them in the relevant service.
+
+You probably do not need multiple builds on multiple services, but this will let you see each and make a choice. For simple things at least, the features are very similar. It is very useful to be able to build and test on multiple environments in parallel, something each of the services provides.
+
+* [Circle CI](https://circleci.com)
+* [Travis CI](https://travis-ci.com)
+* [GitHub Workflows (CI)](https://github.com)
+
 ## /lib/
 
 This holds the built Javascript files. By default, three versions are built, for compatibility with various module systems. Ultimately, the world is moving toward the ECMAScript module format, but in the meantime,
@@ -83,6 +93,7 @@ This hierarchy contains the project's source code and related tests.
 * .gitignore
 * .npmignore — hides build infrastructure, sources, etc. from the final npm package.
 * travis.yml -- configuration for building automatically on [Travis](https://travis-ci.com/)
+* .circle-ci/ -- configuration for building automatically on [Circle CI](https://circleci.com)
+*  .github/workflows -- configuration for building automatically on GitHub Workflows
 * rollup.config.js -- redirects to [/config/rollup.config.ts](/config/rollup.config.ts)
-*
 
