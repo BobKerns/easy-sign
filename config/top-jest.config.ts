@@ -7,7 +7,7 @@ export default {
     testMatch: [
         "<rootDir>/**/__tests__/**.{ts,tsx,js,jsx,mjs}",
         "!**/*.d.ts?(x)",
-        "!**/suite-*.ts",
+        //"!**/suite-*.ts",
         "!**/index*.*",
         // <rootDir> is not substituted unless at beginning, e.g. not in negated patterns!
         // This doesn't matter for terminal patterns, but for intermediate directories, we

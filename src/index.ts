@@ -1,14 +1,12 @@
 /**
- * @module SampleCode Foobar is the Baz
+ * @module Easy-Sign Easy digital signatures for private usage
  */
 /**
- * This is a text description. Module comments have to be at the very start of the file.
- *
- * It has two paragraphs and a
+ * Digital signatures for private usage (i.e. not interop). Embodies best security practices without the
+ * complication of interacting with the wider world of cryptography interchange.
  * @preferred
  */
 
-import * as R from 'ramda';
-export default function hello() {
-    return R.map(a => a.toUpperCase(), "Hello, World!".split(/()/)).filter(a => /[^o,]/i.test(a)).join('');
-}
+export * from './keys-node';
+//export * from './keys-browser';
+export * from './base64';

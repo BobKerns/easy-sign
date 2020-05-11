@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="All" type="JavaScriptTestRunnerJest">
+    <node-interpreter value="project" />
+    <node-options value="" />
+    <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+    <working-dir value="$PROJECT_DIR$/src/__tests__" />
+    <jest-options value="--watch" />
+    <envs />
+    <scope-kind value="TEST_FILE" />
+    <test-file value="$PROJECT_DIR$/src/__tests__/suite-easy.ts" />
+    <method v="2" />
+  </configuration>
+</component>

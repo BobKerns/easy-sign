@@ -1,12 +1,7 @@
-# NPM Project Template
+# Easy-Sign Secure Digital Signatures the easy way
 
-This is a customizable project template. You should replace this file and and code with your own.
+All you need for the simple use case of digital signatures to communicate among a cooperating
+group using the same package. For example, a web front end and back end server.
 
-* Out-of-the-box buildable
-* Travis-CI enabled
-* NPM publish ready.
-* TypeDoc enabled, with Mermaid and PlantUML diagrams
-* Jest Unit Tests
-* Simplified Rollup configuration for packaging for Node and Web (UMD, CommonJS, ES Modules)
 
 [[include:README.md]]
